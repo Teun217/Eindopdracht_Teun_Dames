@@ -98,7 +98,7 @@ h2 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -98%);
+    transform: translate(-50%, -99%);
     animation: fade_in_synth, flicker_synth;
     animation-duration: 3s, 10s;
     animation-delay: 0s, 3s;
