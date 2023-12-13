@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synthesizer</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="MIDI.html">MIDI</a></li>
+                <li><a class="active" href="synthesizer.html">Synthesizer</a>
+                    <ul>
+                        <li><a class="active_dropdown" href="synthesizer.html">Deepmind 12</a></li>
+                        <li><a href="subtractive_synthesis.html">Subtractive</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Synthesizer</h1>
+        <h2>Deepmind 12</h2>
+
+        <!-- hoe streng zijn we met difjes -->
+
+        <dif class="screen_animation_deepmind">
+            <img class="screen_off_synth" src="Images/deepmind12blackscreen.JPG" alt="">
+            <img class="screen_on_synth" src="Images/deepmind12.jpg" alt="A top down photo of the deepmind synthesizer">
+        </dif>
+
+        <h3>Functies</h3>
+
+        <ul title="Functies van de deepmind">
+            <li>2 Low Frequency Oscillators (LFO)</li>
+            <li>Arpeggiator</li>
+            <li>Oscillator 1
+                <ul>
+                    <li>pitch mod</li>
+                    <li>Pulse Width Modulatior</li>
+                </ul>
+            </li>
+            <li>Oscillator 2
+                <ul>
+                    <li>Pitch mod</li>
+                    <li>Tone mod</li>
+                    <li>Pitch</li>
+                    <li>Level</li>
+                </ul>
+            </li>
+            <li> Noise machine</li>
+            <li>Polyphony control</li>
+            <li>Voltage controlled filter
+                <ul>
+                    <li>Frequency control</li>
+                    <li>Resonance control</li>
+                    <li>Envelope amount</li>
+                    <li>LFO amount</li>
+                    <li>Keyboard amount</li>
+                </ul>
+            </li>
+            <li>Amplifier control</li>
+            <li>High pass filter</li>
+            <li>Envelopes
+                <ul>
+                    <li>Attack</li>
+                    <li>Decay</li>
+                    <li>Sustain</li>
+                    <li>Release</li>
+                </ul>
+            </li>
+            <li>Octave control</li>
+            <li>Volume control</li>
+            <li>Portamento</li>
+            <li>Pitch wheel</li>
+            <li>Mod wheel</li>
+            <li>Effects</li>
+        </ul>
+
+        <p>Some of the filters above will be talked about in the <a
+                href="subtractive_synthesis.html">subtractive_synthesis</a> page</p>
+
+        <p>
+            The deepmind is a <a href="subtractive_synthesis.html">subtractive synthesizer</a>.
+            It was produced by Behringer and released in 2016. It is a synthesizer based on the Roland Juno series.
+            Although it has many features that differentiate it.
+
+            The synthesizer produces a audio signal as output. This means if I have to run the signal through an
+            audio-interface.
+            This converts the signal in a way that the computer can read it and record it.
+            This also is one of the big differences between my <a href="MIDI.html">MIDI keyboard</a> and the synth.
+
+        </p>
+    </main>
+
+</body>
+
+</html>

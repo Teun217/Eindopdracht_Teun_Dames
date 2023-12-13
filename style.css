@@ -1,0 +1,356 @@
+h1 {
+    color: #028393
+}
+
+body {
+    margin: 0 0;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* !!!MIDI PAGE!!! */
+/* bron overlay (gebruikt voor de verschillende lagen over elkaar): https://www.w3schools.com/howto/howto_css_image_text.asp */
+/* bron multiple animations: https://stackoverflow.com/questions/37343754/how-to-play-different-css-animations-one-after-another */
+
+
+.screen_animation_midi {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
+.midi_screen_on {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50.5%);
+    animation: fade_in_screen 10s;
+}
+
+.midi_fully_on {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50.5%);
+    animation: fade_in_fully 10s;
+}
+
+@keyframes fade_in_screen {
+    0% {
+        opacity: 0%;
+    }
+
+    5% {
+        opacity: 0%;
+    }
+
+    10% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes fade_in_fully {
+    0% {
+        opacity: 0%;
+    }
+
+    15% {
+        opacity: 0%;
+    }
+
+    18% {
+        opacity: 100%;
+    }
+
+}
+
+/* !!!END MIDI PAGE!!! */
+
+
+/* !!!SYNTHESIZER PAGE!!! */
+
+/* bron overlay (gebruikt voor de verschillende lagen over elkaar): https://www.w3schools.com/howto/howto_css_image_text.asp */
+/* bron multiple animations: https://stackoverflow.com/questions/37343754/how-to-play-different-css-animations-one-after-another */
+
+
+
+.screen_animation_deepmind {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
+.screen_on_synth {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -99%);
+    animation: fade_in_synth, flicker_synth;
+    animation-duration: 3s, 10s;
+    animation-delay: 0s, 3s;
+    animation-iteration-count: 1, infinite;
+    animation-timing-function: ease-in-out, linear;
+}
+
+
+@keyframes fade_in_synth {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes flicker_synth {
+    0% {
+        opacity: 100%;
+    }
+
+    1% {
+        opacity: 80%;
+    }
+
+    2% {
+        opacity: 100%;
+    }
+
+    3% {
+        opacity: 80%;
+    }
+
+    4% {
+        opacity: 100%;
+    }
+
+    39% {
+        opacity: 100%;
+    }
+
+    40% {
+        opacity: 70%;
+    }
+
+    41% {
+        opacity: 100%;
+    }
+
+    59% {
+        opacity: 100%;
+    }
+
+    60% {
+        opacity: 80%;
+    }
+
+    61% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+
+}
+
+/*!!!END SYNTHESIZER PAGE!!! */
+
+/* Nav bar*/
+/* bron nav bar: https://www.w3schools.com/css/css_navbar_horizontal.asp */
+/* bron nav bar dropdown: https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp */
+
+
+
+/*!!!BEGIN MENU!!!*/
+
+/* !! Kijk hier nog eens naar en gebruik https://www.w3schools.com/howto/howto_css_image_text.asp  */
+
+
+.start {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.start img {
+    opacity: 0.6;
+
+}
+
+.startoxygen {
+    margin-right: 1%;
+}
+
+.start img:hover {
+    opacity: 1;
+}
+
+.startdeepmind {
+    margin-right: 1%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.start div {
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 150%;
+    color: #04c4ca;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.start h2,
+.start h3 {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.startdeepmind h2 {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+}
+
+.startdeepmind h3 {
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+}
+
+.startoxygen h2 {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+
+.startoxygen h3 {
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+}
+
+main {
+    margin-left: 10px;
+}
+
+/* Bron: ***nog invullen*** */
+
+/* End begin menu */
+
+/* NAV BAR */
+/* https://css-tricks.com/solved-with-css-dropdown-menus/ */
+
+/* Vragen:
+- Er zit een kleine afstand tussen de nav bar en de rand van de browser, ik dacht margin 0,0 op nav maar dat werkt niet.
+    - update: ben er achter gekomen dat het de margin van de hele body is die hier voor zorgt.
+    - Ik wil die dus kunnen aanpassen maar dan alleen voor de navbar, zodat de rest van de tekst niet tegen de zijkant van het scherm aan staat.
+        Of moet ik dit oplossen met (bijv) 
+        main {
+            margin-left: # px
+        }
+        ?
+- Het lukt niet helemaal meer om de nav bar volledig over de boven pagina heen te krijgen.
+*/
+
+header nav {
+    z-index: 10000;
+    left: 0%;
+    right: 0%;
+    background-color: rgb(117, 42, 42);
+}
+
+nav {
+    position: fixed;
+    max-width: 100%;
+}
+
+nav li {
+    list-style-type: none;
+    float: left;
+}
+
+nav a {
+    display: block;
+    background-color: rgb(117, 42, 42);
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+nav li a:hover {
+    background-color: #321d1dfe;
+}
+
+nav ul li ul li {
+    display: block;
+    margin: 0;
+}
+
+
+nav ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.1s linear;
+}
+
+
+nav ul li:hover>ul,
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+nav ul li ul li {
+    clear: both;
+    width: 100%;
+}
+
+.active {
+    background-color: rgb(139, 64, 64);
+}
+
+.active_dropdown {
+    background-color: rgb(149, 78, 78);
+}
+
+/* EIND NAV BAR */
+
+main {
+    padding-top: 3em;
+}

@@ -1,0 +1,197 @@
+<ul class="navbar">
+    <li>
+        <a href="index.html">Home</a>
+    </li>
+    <li class="dropdown">
+        <a class="active" class="dropdownbutton" href="synthesizer.html">Synthesizer</a>
+        <ul class="dropdown_content">
+            <li>
+                <a href="subtractive_synthesis.html">Subtractive Synthesis</a>
+            </li>
+            <li>
+                <a href="synthesizer.html">Deepmind 12</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="MIDI.html">MIDI</a>
+    </li>
+</ul>
+
+/* links in nav bar */
+/* nav li a {
+float: left;
+display: block;
+color: white;
+padding: 15px 15px;
+text-decoration: none;
+}
+
+nav li a:hover {
+background-color: #04c4ca;
+}
+
+.active {
+background-color: #1b2853;
+}
+
+nav ul {
+position: fixed;
+top: 0;
+width: 100%
+} */
+
+<!-- NAV BAR html
+ -->
+<nav class="navbar">
+    <div class="bar">
+        <a href="index.html">Home</a>
+        <a href="MIDI.html">MIDI</a>
+    </div>
+    <div class="dropdown">
+        <button class="dropdownbutton">Synthesizer
+        </button>
+        <div class="dropdown_content">
+            <a href="synthesizer.html">Deepmind 12</a>
+            <a href="subtractive_synthesis.html">Subtractive Synthesis</a>
+        </div>
+    </div>
+</nav>
+
+<!-- NAV BAR CSS -->
+/* !!!NAVBAR!!! */
+
+.navbar {
+overflow: hidden;
+background-color: #F65625;
+font-family: Arial;
+}
+
+.bar {
+position: absolute;
+top: 0;
+width: 100%;
+}
+
+/* ??? Kan ik én een dropmenu hebben én een fixed nav bar???
+Ik verwacht zelf iets met selector goed doen*/
+
+/* Links inside the navbar */
+.navbar a {
+float: left;
+font-family: 'Courier New', Courier, monospace;
+font-size: 16px;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+float: left;
+overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropdownbutton {
+font-size: 16px;
+font-family: 'Courier New', Courier, monospace;
+border: none;
+outline: none;
+color: white;
+padding: 14px 16px;
+background-color: inherit;
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropdownbutton {
+background-color: #FAAA68;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown_content {
+display: none;
+position: absolute;
+background-color: #FAAA68;
+min-width: 160px;
+z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown_content a {
+float: none;
+color: white;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown_content a:hover {
+background-color: #F6DCAC;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown_content {
+display: block;
+}
+
+.active {
+background-color: #A4D2CD;
+}
+
+<!-- keyframes flicker -->
+
+@keyframes flicker_synth {
+0% {
+opacity: 100%;
+}
+
+1% {
+opacity: 80%;
+}
+
+2% {
+opacity: 100%;
+}
+
+3% {
+opacity: 80%;
+}
+
+4% {
+opacity: 100%;
+}
+
+39% {
+opacity: 100%;
+}
+
+40% {
+opacity: 70%;
+}
+
+41% {
+opacity: 100%;
+}
+
+59% {
+opacity: 100%;
+}
+
+60% {
+opacity: 80%;
+}
+
+61% {
+opacity: 100%;
+}
+
+100% {
+opacity: 100%;
+}
+
+}
