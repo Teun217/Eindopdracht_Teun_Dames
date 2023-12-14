@@ -25,6 +25,12 @@ h3 {
     padding-bottom: 1em;
 }
 
+footer {
+    color: white;
+    padding: 1em;
+    margin-top: 1%;
+}
+
 /* !!!MIDI PAGE!!! */
 /* bron overlay (gebruikt voor de verschillende lagen over elkaar): https://www.w3schools.com/howto/howto_css_image_text.asp */
 /* bron multiple animations: https://stackoverflow.com/questions/37343754/how-to-play-different-css-animations-one-after-another */
@@ -131,15 +137,13 @@ h3 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -99.25%);
+    transform: translate(-50%, -50.25%);
     animation: fade_in_synth, flicker_synth;
     animation-duration: 3s, 10s;
     animation-delay: 0s, 3s;
     animation-iteration-count: 1, infinite;
     animation-timing-function: ease-in-out, linear;
 }
-
-/* +-50% op de transform in de port, maar voor de daadwerkelijke online site werkt -99.25? */
 
 
 @keyframes fade_in_synth {
@@ -224,7 +228,7 @@ h3 {
     justify-content: center;
     text-align: center;
     width: 100%;
-    margin: 0 auto;
+    margin: 2% auto;
 }
 
 .start img {
