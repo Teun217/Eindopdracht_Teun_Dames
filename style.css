@@ -21,6 +21,10 @@ h2 {
 }
 
 
+h3 {
+    padding-bottom: 1em;
+}
+
 /* !!!MIDI PAGE!!! */
 /* bron overlay (gebruikt voor de verschillende lagen over elkaar): https://www.w3schools.com/howto/howto_css_image_text.asp */
 /* bron multiple animations: https://stackoverflow.com/questions/37343754/how-to-play-different-css-animations-one-after-another */
@@ -85,12 +89,25 @@ h2 {
 .container_midi {
     display: flex;
     justify-content: center;
-    align-items: top;
+    align-items: center;
+    margin-top: 5%;
 }
 
 .midi_screenshot {
     max-width: 30%;
 }
+
+.possibilities_midi {
+    margin-right: 2%;
+    transform: translateY(-30%);
+}
+
+.container_midi div {
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 
 /* !!!END MIDI PAGE!!! */
@@ -121,6 +138,8 @@ h2 {
     animation-iteration-count: 1, infinite;
     animation-timing-function: ease-in-out, linear;
 }
+
+/* +-50% op de transform in de port, maar voor de daadwerkelijke online site werkt -99.25? */
 
 
 @keyframes fade_in_synth {
@@ -192,10 +211,13 @@ h2 {
 
 
 
-/*!!!BEGIN MENU!!!*/
+/*!!!HOME MENU!!!*/
 
 /* !! Kijk hier nog eens naar en gebruik https://www.w3schools.com/howto/howto_css_image_text.asp  */
 
+.home_page_main {
+    padding-top: 0%;
+}
 
 .start {
     display: flex;
