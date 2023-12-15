@@ -18,6 +18,8 @@ h2 {
 
 * {
     font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+
 }
 
 
@@ -25,11 +27,7 @@ h3 {
     padding-bottom: 1em;
 }
 
-footer {
-    color: white;
-    padding: 1em;
-    margin-top: 1%;
-}
+
 
 /* !!!MIDI PAGE!!! */
 /* bron overlay (gebruikt voor de verschillende lagen over elkaar): https://www.w3schools.com/howto/howto_css_image_text.asp */
@@ -92,28 +90,33 @@ footer {
 
 }
 
+.inleiding_midi {
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
 .container_midi {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 5em;
 }
 
-.midi_screenshot {
-    max-width: 30%;
+.text_midi {
+    width: 50em;
+    margin-right: 10em;
+    margin-left: 5em;
+
 }
 
-.possibilities_midi {
-    margin-right: 2%;
-    transform: translateY(-30%);
+.flexbox {
+    align-items: center;
 }
 
-.container_midi div {
-    display: flex;
-    flex-direction: column;
+.flexbox img {
+    width: 35em;
+    position: right;
+    margin-right: 10em;
 }
-
-
 
 
 /* !!!END MIDI PAGE!!! */
@@ -137,12 +140,16 @@ footer {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50.25%);
+    transform: translate(-50%, -50.5%);
     animation: fade_in_synth, flicker_synth;
     animation-duration: 3s, 10s;
     animation-delay: 0s, 3s;
     animation-iteration-count: 1, infinite;
     animation-timing-function: ease-in-out, linear;
+}
+
+.ul_synth {
+    margin-bottom: 2%;
 }
 
 
@@ -233,15 +240,14 @@ footer {
 
 .start img {
     opacity: 0.6;
-
-}
-
-.startoxygen {
-    margin-right: 1%;
 }
 
 .start img:hover {
     opacity: 1;
+}
+
+.startoxygen {
+    margin-right: 1%;
 }
 
 .startdeepmind {
@@ -259,13 +265,14 @@ img {
     color: #04c4ca;
     font-weight: bolder;
     text-align: center;
+    max-width: 40%;
 }
 
 .start h2,
 .start h3 {
     background-color: rgba(0, 0, 0, 0.75);
-    padding-right: 10px;
-    padding-left: 10px;
+    padding: 10px;
+    padding: 10px;
 }
 
 .startdeepmind h2 {
@@ -302,18 +309,6 @@ main {
 
 /* NAV BAR */
 /* https://css-tricks.com/solved-with-css-dropdown-menus/ */
-
-/* Vragen:
-- Er zit een kleine afstand tussen de nav bar en de rand van de browser, ik dacht margin 0,0 op nav maar dat werkt niet.
-    - update: ben er achter gekomen dat het de margin van de hele body is die hier voor zorgt.
-    - Ik wil die dus kunnen aanpassen maar dan alleen voor de navbar, zodat de rest van de tekst niet tegen de zijkant van het scherm aan staat.
-        Of moet ik dit oplossen met (bijv) 
-        main {
-            margin-left: # px
-        }
-        ?
-- Het lukt niet helemaal meer om de nav bar volledig over de boven pagina heen te krijgen.
-*/
 
 header nav {
     z-index: 10000;
@@ -372,7 +367,7 @@ nav ul li ul {
 
 
 nav ul li:hover>ul,
-ul li ul:hover {
+nav ul li ul:hover {
     visibility: visible;
     opacity: 1;
     display: block;
@@ -401,5 +396,60 @@ main {
 
 footer {
     background-color: rgb(117, 42, 42);
-    min-height: 100%;
+    color: white;
+    min-width: 100%;
+    min-height: 20em;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    margin-top: 5%;
+}
+
+footer h3 {
+    margin: 0%;
+}
+
+footer p {
+    margin-bottom: 5%;
+}
+
+footer img {
+    width: auto;
+    float: right;
+    display: inline;
+    max-height: 20em;
+}
+
+.footer_container {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+    margin: 1%
+}
+
+footer ul img {
+    max-width: 40px;
+    margin: 1%;
+}
+
+footer ul {
+    list-style-type: none;
+    padding-left: 0%;
+    display: flex;
+    flex-flow: column;
+}
+
+footer ul li {
+    margin: 0.5%;
+}
+
+footer ul li ul {
+    display: flex;
+    flex-direction: row;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
 }
