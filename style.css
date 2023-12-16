@@ -391,20 +391,25 @@ main {
 
 /*!!!SUBTRACTIVE SYNTHESIS!!!*/
 
-section {
-    margin-top: 5%;
-    margin-bottom: 5%;
+.subsection_subsynth {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.section_subsynth {
+    margin-top: 6%;
+    margin-bottom: 6%;
 }
 
 h4 {
     margin: 1em;
 }
 
-.subtractive_synthesis p {
+.section_subsynth p {
     max-width: 60%;
 }
 
-.subtractive_synthesis p:not(.intro_text) {
+.section_subsynth p:not(.intro_text) {
     margin-left: 1em;
 }
 
@@ -412,10 +417,12 @@ h4 {
     display: flex;
     flex-direction: column;
     float: right;
+    margin-right: 5%;
 }
 
 section audio {
     float: right;
+    margin-right: 5%;
 }
 
 /* !!!END SUBTRACTIVE SYNTESIS!!! */

@@ -41,94 +41,111 @@
 
         <h2>Features on the Deepmind</h2>
 
-        <section class="subtractive_synthesis">
+        <section class="section_subsynth">
             <h3>Oscillators</h3>
 
             <p class="intro_text">Oscillators are the things that make the noise within a synthesizer. </p>
 
-            <h4>Oscillator 1</h4>
+            <section class="subsection_subsynth">
+                <h4>Oscillator 1</h4>
 
-            <div class="multiple_audio_samples">
-                <audio controls src="Audio/Osc_1_Saw.wav">
-                    Your browser does not support this audiofile
-                </audio>
+                <div class="multiple_audio_samples">
+                    <audio controls src="Audio/Osc_1_Saw.wav">
+                        Your browser does not support this audio file
+                    </audio>
 
-                <audio controls src="Audio/Osc_1_Square.wav">
-                    Your browser does not support this audiofile
-                </audio>
-            </div>
+                    <audio controls src="Audio/Osc_1_Square.wav">
+                        Your browser does not support this audio file
+                    </audio>
+                </div>
 
 
-            <p>You have two types of waves within this
-                synth. Saw waves, which you can hear through the first audio sample. And square waves, which you can
-                hear
-                through
-                the second audio sample. You can also combine these waves.</p>
+                <p>You have two types of waves within this
+                    synth. Saw waves, which you can hear through the first audio sample. And square waves, which you can
+                    hear
+                    through
+                    the second audio sample. You can also combine these waves.</p>
+            </section>
 
-            <h4>Oscillator 2</h4>
+            <section class="subsection_subsynth">
+                <h4>Oscillator 2</h4>
 
-            <div class="multiple_audio_samples">
-                <audio controls src="Audio/Osc_2_level.wav">
-                    Your browser does not support this audiofile
-                </audio>
+                <div class="multiple_audio_samples">
+                    <audio controls src="Audio/Osc_2_level.wav">
+                        Your browser does not support this audio file
+                    </audio>
 
-                <audio controls src="Audio/Osc_2_pitch.wav">
-                    Your browser does not support this audiofile
-                </audio>
-            </div>
+                    <audio controls src="Audio/Osc_2_pitch.wav">
+                        Your browser does not support this audio file
+                    </audio>
+                </div>
 
-            <p>The deepmind has 2 oscillators that can play over eachother. Oscillator 2 gives you among other things
-                control over pitch and volume. The first oscillator doesn't have pitch or volume control directly with
-                slider. The second oscillator produces a square wave.
-                The first audio clip lets you hear oscillator 1 and then oscillator 2 playing over it.
-            </p>
+                <p>The deepmind has 2 oscillators that can play over eachother. Oscillator 2 gives you among other
+                    things
+                    control over pitch and volume. The first oscillator doesn't have pitch or volume control directly
+                    with
+                    slider. The second oscillator produces a square wave.
+                    The first audio clip lets you hear oscillator 1 and then oscillator 2 playing over it.
+                </p>
+            </section>
+
         </section>
 
-        <section class="subtractive_synthesis">
+        <section class="section_subsynth">
             <h3>Noise level</h3>
             <audio controls src="Audio/Noise_machine.wav">
-                Your browser does not support this audiofile
+                Your browser does not support this audio file
             </audio>
 
             <p class="intro_text">This slider regulates the volume of the noise. It can be used to add texture to a
                 sound.</p>
         </section>
 
-        <section class="subtractive_synthesis">
+        <section class="section_subsynth">
             <h3>VCF (Voltage Controlled low pass Filter)</h3>
             <p class="intro_text">This filter lets lower frequencies through and filters away higher ones.</p>
 
-            <h4>frequency control</h4>
-            <audio controls src="Audio/Freq_controle.wav">
-                Your browser does not support this audiofile
-            </audio>
-            <p>One of the two controls you have within the VCF is the frequency control. This controls at which level of
-                frequency the sound gets cut.
-                In the audio sample you can here the higher frequencies going away and back again. This, I think,
-                results in
-                a sharper tone. With the frequency all the way down, it sound like you're underwater.
-            </p>
+            <section class="subsection_subsynth">
+                <h4>frequency control</h4>
+                <audio controls src="Audio/Freq_controle.wav">
+                    Your browser does not support this audio file
+                </audio>
+                <p>One of the two controls you have within the VCF is the frequency control. This controls at which
+                    level of
+                    frequency the sound gets cut.
+                    In the audio sample you can here the higher frequencies going away and back again. This, I think,
+                    results in
+                    a sharper tone. With the frequency all the way down, it sound like you're underwater.
+                </p>
+            </section>
 
+            <section class="subsection_subsynth">
+                <h4>resonandce control</h4>
+                <audio controls src="Audio/Res_controle.wav">
+                    Your browser does not support this audio file
+                </audio>
+                <p>Achieved by applying FEEDBACK to a FILTER: the effect of resonance “boosts” the frequencies around
+                    the
+                    CUTOFF
+                    frequency. As resonance increases, the feedback increases to a point that the filter can generate a
+                    sine-wave tone.
+                </p>
+                <!-- ^^^ bron:https://rolandcorp.com.au/blog/a-to-z-synthesizer#:~:text=RESONANCE%20%E2%80%93%20Achieved%20by%20applying%20FEEDBACK,called%20%E2%80%9Cself%2Doscillation%E2%80%9D. -->
+            </section>
 
-            <h4>resonandce control</h4>
-            <audio controls src="Audio/Res_controle.wav"></audio>
-            <p>Achieved by applying FEEDBACK to a FILTER: the effect of resonance “boosts” the frequencies around the
-                CUTOFF
-                frequency. As resonance increases, the feedback increases to a point that the filter can generate a
-                sine-wave tone.
-            </p>
-            <!-- ^^^ bron:https://rolandcorp.com.au/blog/a-to-z-synthesizer#:~:text=RESONANCE%20%E2%80%93%20Achieved%20by%20applying%20FEEDBACK,called%20%E2%80%9Cself%2Doscillation%E2%80%9D. -->
         </section>
 
-        <section class="subtractive_synthesis">
+        <section class="section_subsynth">
             <h3>HPF (high pass filter)</h3>
-            <audio controls src="Audio/HPF_freq_controle.wav"></audio>
+            <audio controls src="Audio/HPF_freq_controle.wav">
+                Your browser does not support this audio file
+            </audio>
             <p class="intro_text">This slider filters lower frequencies away. This you can hear within the audio sample:
                 the sound get less "full".
             </p>
         </section>
 
-        <section class="subtractive_synthesis">
+        <section class="section_subsynth">
             <h3>Envelopes</h3>
             <p class="intro_text">Envelopes are a way of controlling the volume or certain filters within the synth.
                 They are basically
@@ -139,32 +156,56 @@
                 to
                 different filters.</p>
 
-            <h4>Attack</h4>
-            <audio controls src="Audio/Attack_envelope.wav"></audio>
-            <p>Attack decides how long it takes for the filter to reach its max level.
-            </p>
+            <section class="subsection_subsynth">
+                <h4>Attack</h4>
+                <audio controls src="Audio/Attack_envelope.wav">
+                    Your browser does not support this audio file
+                </audio>
+                <p>Attack decides how long it takes for the filter to reach its max level.
+                </p>
+            </section>
 
-            <h4>Decay</h4>
-            <audio controls src="Audio/Decay_envelope.wav"></audio>
-            <p> Decay decides how long it takes for the filter to lower to sustain level.
-            </p>
 
-            <h4>Sustain</h4>
-            <audio controls src="Audio/Sustain_envelope.wav"></audio>
-            <p>Sustain is the level the filter stays at after the decay. The sustain lasts as long as the note is still
-                being pressed.</p>
+            <section class="subsection_subsynth">
+                <h4>Decay</h4>
+                <audio controls src="Audio/Decay_envelope.wav">
+                    Your browser does not support this audio file
+                </audio>
+                <p> Decay decides how long it takes for the filter to lower to sustain level.
+                </p>
+            </section>
 
-            <h4>Release</h4>
-            <audio controls src="Audio/Release_envelope.wav"></audio>
-            <p>Release decides how long it takes for a note to fade out after the key has been released. So with a
-                sustain
-                of 30 seconds, after you release the key that plays the note, the note will fade out over 30 seconds.
-            </p>
+
+            <section class="subsection_subsynth">
+                <h4>Sustain</h4>
+                <audio controls src="Audio/Sustain_envelope.wav">
+                    Your browser does not support this audio file
+                </audio>
+                <p>Sustain is the level the filter stays at after the decay. The sustain lasts as long as the note is
+                    still
+                    being pressed.</p>
+            </section>
+
+
+            <section class="subsection_subsynth">
+                <h4>Release</h4>
+                <audio controls src="Audio/Release_envelope.wav">
+                    Your browser does not support this audio file
+                </audio>
+                <p>Release decides how long it takes for a note to fade out after the key has been released. So with a
+                    sustain
+                    of 30 seconds, after you release the key that plays the note, the note will fade out over 30
+                    seconds.
+                </p>
+            </section>
+
         </section>
 
-        <section class="subtractive_synthesis">
+        <section class="section_subsynth">
             <h3>Arpeggiator</h3>
-            <audio controls src="Audio/Arp.wav"></audio>
+            <audio controls src="Audio/Arp.wav">
+                Your browser does not support this audio file
+            </audio>
             <p>An arpeggiator makes it so if you press multiple notes the get played after eachother, this can be in
                 different patterns. But what happens a lot is just going down all the notes that are pressed, like in
                 the
@@ -174,9 +215,11 @@
             </p>
         </section>
 
-        <section class="subtractive_synthesis">
+        <section class="section_subsynth">
             <h3>Low Frequency Oscillators (LFO)</h3>
-            <audio controls src="Audio/LFO.wav"></audio>
+            <audio controls src="Audio/LFO.wav">
+                Your browser does not support this audio file
+            </audio>
             <p>In my opinion maybe one of the more interesting sliders on the synth are the LFO's. As the name suggests
                 they
                 are oscillators. But instead of having a frequency so high it forms a tone, it's slow.
@@ -187,6 +230,21 @@
                 way off to all the way on. This doesn't sound that good (but I thought it was helpful to demonstrate),
                 so
                 usually you tune it so it's less "deep".
+            </p>
+        </section>
+
+        <section class="section_subsynth">
+            <h3>Examples</h3>
+            <div class="multiple_audio_samples">
+                <audio controls src="Audio/Voorbeeld_combinatie.wav">
+                    Your browser does not support this audio file
+                </audio>
+                <audio controls src="Audio/Voorbeeld_combinatie_arp.wav">
+                    Your browser does not support this audio file
+                </audio>
+            </div>
+            <p> These are some sounds I made combining all of the concepts above. The first one, as you can maybe hear,
+                is without an arp and the second one is with an arp.
             </p>
         </section>
 
