@@ -4,7 +4,7 @@ body {
 }
 
 h1 {
-    color: #028393
+    color: #028393;
 }
 
 body {
@@ -14,6 +14,8 @@ body {
 h1,
 h2 {
     text-align: center;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
 }
 
 * {
@@ -24,9 +26,179 @@ h2 {
 
 
 h3 {
-    padding-bottom: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
+/* NAV BAR */
+/* bron nav bar: https://www.w3schools.com/css/css_navbar_horizontal.asp */
+/* bron nav bar dropdown: https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp */
+/* https://css-tricks.com/solved-with-css-dropdown-menus/ */
+
+header nav {
+    z-index: 10000;
+    left: 0%;
+    right: 0%;
+    background-color: rgb(117, 42, 42);
+}
+
+main {
+    padding-top: 5em;
+}
+
+nav {
+    position: fixed;
+    max-width: 100%;
+}
+
+nav li {
+    list-style-type: none;
+    float: left;
+}
+
+nav a {
+    display: block;
+    background-color: rgb(117, 42, 42);
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+nav li a:hover {
+    background-color: #321d1dfe;
+}
+
+nav ul li ul li {
+    display: block;
+    margin: 0;
+}
+
+
+nav ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.1s linear;
+}
+
+
+nav ul li:hover>ul,
+nav ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+nav ul li ul li {
+    clear: both;
+    width: 100%;
+}
+
+.active {
+    background-color: rgb(139, 64, 64);
+}
+
+.active_dropdown {
+    background-color: rgb(149, 78, 78);
+}
+
+/* END NAV BAR */
+
+/*!!!HOME MENU!!!*/
+
+/*bron text over image: https://www.w3schools.com/howto/howto_css_image_text.asp  */
+
+.home_page_main {
+    padding-top: 0%;
+}
+
+.start {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 2% auto;
+}
+
+.start img {
+    opacity: 0.6;
+}
+
+.start img:hover {
+    opacity: 1;
+}
+
+.startoxygen {
+    margin-right: 1%;
+}
+
+.startdeepmind {
+    margin-right: 1%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.start div {
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 150%;
+    color: #04c4ca;
+    font-weight: bolder;
+    text-align: center;
+    max-width: 40%;
+}
+
+.start h2,
+.start h3 {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 10px;
+    padding: 10px;
+}
+
+.startdeepmind h2 {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+}
+
+.startdeepmind h3 {
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+}
+
+.startoxygen h2 {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+
+.startoxygen h3 {
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+}
+
+main {
+    margin-left: 10px;
+}
+
+/*!!!END HOME MENU!!!*/
 
 
 /* !!!MIDI PAGE!!! */
@@ -216,181 +388,38 @@ h3 {
 
 /*!!!END SYNTHESIZER PAGE!!! */
 
-/* Nav bar*/
-/* bron nav bar: https://www.w3schools.com/css/css_navbar_horizontal.asp */
-/* bron nav bar dropdown: https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp */
 
+/*!!!SUBTRACTIVE SYNTHESIS!!!*/
 
-
-/*!!!HOME MENU!!!*/
-
-/* !! Kijk hier nog eens naar en gebruik https://www.w3schools.com/howto/howto_css_image_text.asp  */
-
-.home_page_main {
-    padding-top: 0%;
+section {
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
-.start {
+h4 {
+    margin: 1em;
+}
+
+.subtractive_synthesis p {
+    max-width: 60%;
+}
+
+.subtractive_synthesis p:not(.intro_text) {
+    margin-left: 1em;
+}
+
+.multiple_audio_samples {
     display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    margin: 2% auto;
+    flex-direction: column;
+    float: right;
 }
 
-.start img {
-    opacity: 0.6;
+section audio {
+    float: right;
 }
 
-.start img:hover {
-    opacity: 1;
-}
+/* !!!END SUBTRACTIVE SYNTESIS!!! */
 
-.startoxygen {
-    margin-right: 1%;
-}
-
-.startdeepmind {
-    margin-right: 1%;
-}
-
-img {
-    max-width: 100%;
-}
-
-.start div {
-    position: relative;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 150%;
-    color: #04c4ca;
-    font-weight: bolder;
-    text-align: center;
-    max-width: 40%;
-}
-
-.start h2,
-.start h3 {
-    background-color: rgba(0, 0, 0, 0.75);
-    padding: 10px;
-    padding: 10px;
-}
-
-.startdeepmind h2 {
-    position: absolute;
-    top: 0px;
-    left: 10px;
-}
-
-.startdeepmind h3 {
-    position: absolute;
-    bottom: 0px;
-    left: 10px;
-}
-
-.startoxygen h2 {
-    position: absolute;
-    top: 0px;
-    right: 10px;
-}
-
-.startoxygen h3 {
-    position: absolute;
-    bottom: 0px;
-    right: 10px;
-}
-
-main {
-    margin-left: 10px;
-}
-
-/* Bron: ***nog invullen*** */
-
-/* End begin menu */
-
-/* NAV BAR */
-/* https://css-tricks.com/solved-with-css-dropdown-menus/ */
-
-header nav {
-    z-index: 10000;
-    left: 0%;
-    right: 0%;
-    background-color: rgb(117, 42, 42);
-}
-
-nav {
-    position: fixed;
-    max-width: 100%;
-}
-
-nav li {
-    list-style-type: none;
-    float: left;
-}
-
-nav a {
-    display: block;
-    background-color: rgb(117, 42, 42);
-}
-
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-
-nav li a:hover {
-    background-color: #321d1dfe;
-}
-
-nav ul li ul li {
-    display: block;
-    margin: 0;
-}
-
-
-nav ul li ul {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    transition: all 0.1s linear;
-}
-
-
-nav ul li:hover>ul,
-nav ul li ul:hover {
-    visibility: visible;
-    opacity: 1;
-    display: block;
-}
-
-nav ul li ul li {
-    clear: both;
-    width: 100%;
-}
-
-.active {
-    background-color: rgb(139, 64, 64);
-}
-
-.active_dropdown {
-    background-color: rgb(149, 78, 78);
-}
-
-/* EIND NAV BAR */
-
-main {
-    padding-top: 3em;
-}
 
 /* !!!FOOTER!!! */
 
@@ -410,6 +439,7 @@ footer h3 {
 
 footer p {
     margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 footer img {

@@ -27,7 +27,10 @@
 
     <main>
 
+
+
         <h1>Subtractive Synthesis</h1>
+
         <p>
             A very common type of synthesizer is the subtractive synthesizer.
             Subtractive synthesis basicallyl means that there is a little screamer (the oscillator) it makes a lot of
@@ -38,53 +41,155 @@
 
         <h2>Features on the Deepmind</h2>
 
+        <section class="subtractive_synthesis">
+            <h3>Oscillators</h3>
 
-        <h3>Oscillator 1</h3>
+            <p class="intro_text">Oscillators are the things that make the noise within a synthesizer. </p>
 
-        <audio controls src="Audio/Osc_1_Saw.wav">
-            Your browser does not support this audiofile
-        </audio>
+            <h4>Oscillator 1</h4>
 
-        <audio controls src="Audio/Osc_1_Square.wav">
-            Your browser does not support this audiofile
-        </audio>
+            <div class="multiple_audio_samples">
+                <audio controls src="Audio/Osc_1_Saw.wav">
+                    Your browser does not support this audiofile
+                </audio>
 
-        <p>Oscillators are the things that make the noise within a synthesizer. You have two types of waves (square and
-            saw waves) and they
-            both sound a little bit different. You can also combine these waves.</p>
-
-
-
-        <h3>Oscillator 2</h3>
-
-        <audio title="Saw wave" controls src="Audio/Osc_1_Saw.wav">
-            Your browser does not support this audiofile
-        </audio>
-
-        <audio title="Square wave" controls src="Audio/Osc_1_Saw.wav">
-            Your browser does not support this audiofile
-        </audio>
-
-        <p>The deepmind has 2 oscillators that can play over eachother. Oscillator 2 gives you among other things
-            control over pitch and volume.
-        </p>
+                <audio controls src="Audio/Osc_1_Square.wav">
+                    Your browser does not support this audiofile
+                </audio>
+            </div>
 
 
-        <h3>Noise level</h3>
+            <p>You have two types of waves within this
+                synth. Saw waves, which you can hear through the first audio sample. And square waves, which you can
+                hear
+                through
+                the second audio sample. You can also combine these waves.</p>
 
-        <audio controls src="Audio/Osc_1_Saw.wav">
-            Your browser does not support this audiofile
-        </audio>
+            <h4>Oscillator 2</h4>
 
-        <p>This slider regulates the volume of the noise.</p>
+            <div class="multiple_audio_samples">
+                <audio controls src="Audio/Osc_2_level.wav">
+                    Your browser does not support this audiofile
+                </audio>
 
-        <h3>Frequency</h3>
+                <audio controls src="Audio/Osc_2_pitch.wav">
+                    Your browser does not support this audiofile
+                </audio>
+            </div>
 
-        <audio controls src="Audio/Osc_1_Saw.wav">
-            Your browser does not support this audiofile
-        </audio>
+            <p>The deepmind has 2 oscillators that can play over eachother. Oscillator 2 gives you among other things
+                control over pitch and volume. The first oscillator doesn't have pitch or volume control directly with
+                slider. The second oscillator produces a square wave.
+                The first audio clip lets you hear oscillator 1 and then oscillator 2 playing over it.
+            </p>
+        </section>
 
-        <p> </p>
+        <section class="subtractive_synthesis">
+            <h3>Noise level</h3>
+            <audio controls src="Audio/Noise_machine.wav">
+                Your browser does not support this audiofile
+            </audio>
+
+            <p class="intro_text">This slider regulates the volume of the noise. It can be used to add texture to a
+                sound.</p>
+        </section>
+
+        <section class="subtractive_synthesis">
+            <h3>VCF (Voltage Controlled low pass Filter)</h3>
+            <p class="intro_text">This filter lets lower frequencies through and filters away higher ones.</p>
+
+            <h4>frequency control</h4>
+            <audio controls src="Audio/Freq_controle.wav">
+                Your browser does not support this audiofile
+            </audio>
+            <p>One of the two controls you have within the VCF is the frequency control. This controls at which level of
+                frequency the sound gets cut.
+                In the audio sample you can here the higher frequencies going away and back again. This, I think,
+                results in
+                a sharper tone. With the frequency all the way down, it sound like you're underwater.
+            </p>
+
+
+            <h4>resonandce control</h4>
+            <audio controls src="Audio/Res_controle.wav"></audio>
+            <p>Achieved by applying FEEDBACK to a FILTER: the effect of resonance “boosts” the frequencies around the
+                CUTOFF
+                frequency. As resonance increases, the feedback increases to a point that the filter can generate a
+                sine-wave tone.
+            </p>
+            <!-- ^^^ bron:https://rolandcorp.com.au/blog/a-to-z-synthesizer#:~:text=RESONANCE%20%E2%80%93%20Achieved%20by%20applying%20FEEDBACK,called%20%E2%80%9Cself%2Doscillation%E2%80%9D. -->
+        </section>
+
+        <section class="subtractive_synthesis">
+            <h3>HPF (high pass filter)</h3>
+            <audio controls src="Audio/HPF_freq_controle.wav"></audio>
+            <p class="intro_text">This slider filters lower frequencies away. This you can hear within the audio sample:
+                the sound get less "full".
+            </p>
+        </section>
+
+        <section class="subtractive_synthesis">
+            <h3>Envelopes</h3>
+            <p class="intro_text">Envelopes are a way of controlling the volume or certain filters within the synth.
+                They are basically
+                telling
+                the synth how much, volume or control over other filter, it should give. The following envelopes are in
+                order next to each other. All of the audio samples show control over volume, but you can also link
+                envelopes
+                to
+                different filters.</p>
+
+            <h4>Attack</h4>
+            <audio controls src="Audio/Attack_envelope.wav"></audio>
+            <p>Attack decides how long it takes for the filter to reach its max level.
+            </p>
+
+            <h4>Decay</h4>
+            <audio controls src="Audio/Decay_envelope.wav"></audio>
+            <p> Decay decides how long it takes for the filter to lower to sustain level.
+            </p>
+
+            <h4>Sustain</h4>
+            <audio controls src="Audio/Sustain_envelope.wav"></audio>
+            <p>Sustain is the level the filter stays at after the decay. The sustain lasts as long as the note is still
+                being pressed.</p>
+
+            <h4>Release</h4>
+            <audio controls src="Audio/Release_envelope.wav"></audio>
+            <p>Release decides how long it takes for a note to fade out after the key has been released. So with a
+                sustain
+                of 30 seconds, after you release the key that plays the note, the note will fade out over 30 seconds.
+            </p>
+        </section>
+
+        <section class="subtractive_synthesis">
+            <h3>Arpeggiator</h3>
+            <audio controls src="Audio/Arp.wav"></audio>
+            <p>An arpeggiator makes it so if you press multiple notes the get played after eachother, this can be in
+                different patterns. But what happens a lot is just going down all the notes that are pressed, like in
+                the
+                audio sample, or going up all
+                the notes that are pressed. The arpeggiator can be sped up or slowed down, this is also hearable in the
+                audio clip.
+            </p>
+        </section>
+
+        <section class="subtractive_synthesis">
+            <h3>Low Frequency Oscillators (LFO)</h3>
+            <audio controls src="Audio/LFO.wav"></audio>
+            <p>In my opinion maybe one of the more interesting sliders on the synth are the LFO's. As the name suggests
+                they
+                are oscillators. But instead of having a frequency so high it forms a tone, it's slow.
+                You can connect a LFO to almost every filter (and more) within the deepmind. For example connect it to
+                level
+                (volume) or pitch control for a slight vibrato. In the audio clip the oscillator is between volume all
+                the
+                way off to all the way on. This doesn't sound that good (but I thought it was helpful to demonstrate),
+                so
+                usually you tune it so it's less "deep".
+            </p>
+        </section>
+
 
     </main>
 
@@ -92,12 +197,10 @@
         <div class="footer_container">
             <h3>Why this website?</h3>
             <p> I made this website because of a school project.
-                This website is about the difference between two keyboards of mine. Sometimes when I show them I get
+                This website is about the difference and functions between two keyboards of mine. Sometimes when I show
+                them I get
                 asked
-                why I need two. But although they at first glance look a little simular, they do completely
-                different
-                things.
-                I also like talking about how they work.
+                why I need two. But although they both have a keybed, they do very different things.
             </p>
 
             <ul>
