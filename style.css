@@ -208,6 +208,8 @@ main {
 /* bron overlay (gebruikt voor de verschillende lagen over elkaar): https://www.w3schools.com/howto/howto_css_image_text.asp */
 /* bron multiple animations: https://stackoverflow.com/questions/37343754/how-to-play-different-css-animations-one-after-another */
 /* bron text next to image centered: https://www.w3docs.com/snippets/css/how-to-vertically-align-text-next-to-an-image.html */
+/* bron: Kim heeft mij geholpen met de opmaak van text en afbeeldingen. */
+
 
 .screen_animation_midi {
     position: relative;
@@ -441,6 +443,9 @@ footer {
     padding-bottom: 1%;
     padding-top: 1%;
     margin-top: 5%;
+    position: relative;
+    bottom: 0;
+
 }
 
 footer h3 {
@@ -465,7 +470,7 @@ footer img {
     flex-direction: column;
     justify-content: center;
     max-width: 50%;
-    margin: 1%
+    margin-left: 1%;
 }
 
 footer ul img {
